@@ -6,6 +6,8 @@ st.markdown("<h1 style='text-align: center;font-family: serif;'>SHUBHAM BISHT</h
 
 st.markdown("<h3 style='text-align: center;color: grey;'>About me</h3>", unsafe_allow_html=True)
 
+st.sidebar.markdown("# Home")
+
 st.write("""
 
 I’m a 20-year-old currently in second year of a **Bachelor of Computer Applications (BCA)** at **IGNOU, Delhi** (Graduating in 2027).

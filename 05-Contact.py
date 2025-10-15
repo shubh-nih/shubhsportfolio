@@ -1,5 +1,4 @@
 import streamlit as st
-st.set_page_config(page_title="Contacts", layout="wide")
 
 st.markdown("<p style='text-align: top-right;'>Portfolio</p>", unsafe_allow_html=True)
 

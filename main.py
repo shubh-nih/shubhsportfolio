@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(layout = 'wide')
 
 home = st.Page("01-Home.py", title="Home", icon="🏠")
 resume = st.Page("02-Resume.py", title="Resume", icon="📄")

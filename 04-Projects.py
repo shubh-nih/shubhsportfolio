@@ -6,7 +6,7 @@ st.markdown("<h1 style='text-align: center;font-family: serif;'>PROJECTS</h1>", 
 
 st.sidebar.markdown("# Projects")
 
-col1, col2 = st.columns(2)
+col1, col2 = st.columns(2, gap = 'large')
 with col1:
     st.image('img/gurgaon.png')
     st.markdown('#### Gurgaon RealEstate ML Capstone Project')

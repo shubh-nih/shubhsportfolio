@@ -1,5 +1,11 @@
 import streamlit as st
-st.set_page_config(layout = 'wide')
+
+st.set_page_config(
+    page_title = "Shubham Bisht | Data Science Portfolio",
+    page_icon = "💻",
+    layout = "wide",
+    initial_sidebar_state = "collapsed"
+)
 
 home = st.Page("01-Home.py", title="Home", icon="🏠")
 resume = st.Page("02-Resume.py", title="Resume", icon="📄")

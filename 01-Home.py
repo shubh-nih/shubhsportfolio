@@ -106,9 +106,10 @@ with col2:
     )
     st.write(
          """
-         🔗 **Connect with me:** [Email](mailto:shubhambisht149@gmail.com) | 
+         🔗 **Profile:** 
          [LinkedIn](https://www.linkedin.com/in/shubhambisht7/) | 
-         [GitHub](https://github.com/shubh-nih)
+         [GitHub](https://github.com/shubh-nih) | 
+         [Kaggle](https://www.kaggle.com/nihshu)
          """
     )
 

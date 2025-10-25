@@ -1,5 +1,9 @@
 import streamlit as st
 from datetime import datetime
+import pytz
+
+ist = pytz.timezone('Asia/Kolkata')
+now_ist = datetime.datetime.now(ist)
 
 st.markdown("<p style='text-align: top-right;'>Portfolio</p>", unsafe_allow_html=True)
 
@@ -25,5 +29,5 @@ with col2:
     """)
 
 st.caption(f"""Timezone   
-           Current Time: {datetime.now().strftime('%I:%M %p')} (IST)  
+           Current Time: {now_ist.strftime("%Y-%m-%d %H:%M:%S")} (IST)  
 """)

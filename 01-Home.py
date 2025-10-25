@@ -107,9 +107,9 @@ with col2:
     st.write(
          """
          🔗 **Profile:** 
-         [LinkedIn](https://www.linkedin.com/in/shubhambisht7/) | 
-         [GitHub](https://github.com/shubh-nih) | 
-         [Kaggle](https://www.kaggle.com/nihshu)
+         [Kaggle](https://www.kaggle.com/nihshu) | 
+         [GitHub](https://github.com/shubh-nih) |  
+         [LinkedIn](https://www.linkedin.com/in/shubhambisht7/)
          """
     )
 

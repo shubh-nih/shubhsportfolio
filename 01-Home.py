@@ -108,7 +108,7 @@ with col2:
          """
          🔗 **Profile:** 
          [Kaggle](https://www.kaggle.com/nihshu) | 
-         [GitHub](https://github.com/shubh-nih) |  
+         [GitHub](https://github.com/shubh-nih) |
          [LinkedIn](https://www.linkedin.com/in/shubhambisht7/)
          """
     )

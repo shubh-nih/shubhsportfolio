@@ -1,5 +1,5 @@
 import streamlit as st
-from datetime import datetime
+import datetime
 import pytz
 
 ist = pytz.timezone('Asia/Kolkata')

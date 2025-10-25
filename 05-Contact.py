@@ -30,5 +30,6 @@ with col2:
 
 st.caption(f"""Timezone   
            Current Date & Time: 
+           
            {now_ist.strftime('%Y-%m-%d %I:%M %p')} (IST)  
 """)

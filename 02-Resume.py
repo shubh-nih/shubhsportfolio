@@ -6,10 +6,6 @@ st.markdown("<h1 style='text-align: center;font-family: serif;'>RESUME</h1>", un
 
 st.sidebar.markdown("# Resume")
 
-
-
-st.title("📄 Resume")
-
 # Display PDF
 pdf_viewer("shubham-ml-resume.pdf", width=700)
 

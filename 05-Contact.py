@@ -28,7 +28,7 @@ with col2:
     - [GitHub](https://github.com/shubh-nih)
     """)
 
-st.caption(f"""Timezone   
+st.caption(f"""  
            Current Date & Time: 
            
            {now_ist.strftime('%Y-%m-%d %I:%M %p')} (IST)  

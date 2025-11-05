@@ -30,7 +30,7 @@ with col2:
     
 st.markdown('---')
 
-st.markdown("## 📊 Data Analysis Projects")
+st.markdown("## 📊 Data Analysis Pro")
 
 st.markdown('---')
 col1, col2 = st.columns(2, gap = 'large')

@@ -31,3 +31,24 @@ with col2:
 st.markdown('---')
 
 st.markdown("## 📊 Data Analysis Projects")
+
+st.markdown('---')
+col1, col2 = st.columns(2, gap = 'large')
+with col1:
+    st.image('img/indicator.png')
+    st.markdown('#### World Indicators Analysis')
+    st.write('''
+        An end to end data analysis and visualization project leveraging the World Bank API to explore global trends across economy, health, environment, technology, and labor indicators.
+    ''')
+    st.link_button('GitHub Repo', 'https://github.com/shubh-nih/World-Indicators-Analysis')
+        
+with col2:
+    st.image('img/superstore.png')
+    st.markdown('#### Superstore Sales Analysis')
+    st.write('''
+        An end to end data analysis project exploring sales performance, customer behavior, and regional trends for a retail superstore dataset from Kaggle.
+    ''')
+
+    st.link_button('GitHub Repo', 'https://github.com/shubh-nih/Superstore-Sales-Analysis')
+    
+

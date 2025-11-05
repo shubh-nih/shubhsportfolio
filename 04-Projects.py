@@ -28,9 +28,8 @@ with col2:
     st.link_button('Live Website', 'https://sentiment-analysisnih.streamlit.app/')
     st.link_button('GitHub Repo', 'https://github.com/shubh-nih/Tweets-Sentiment-Analysis')
     
-st.markdown('---')
 
-st.markdown("## 📊 Data Analysis Pro")
+st.markdown("## 📊 Data Analysis Projects")
 
 st.markdown('---')
 col1, col2 = st.columns(2, gap = 'large')

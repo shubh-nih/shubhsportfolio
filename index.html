@@ -546,29 +546,29 @@ section, div[id] { scroll-margin-top: 80px; }
   });
 
   if(window.top!==window.self) window.top.location=window.self.location;
-  /* Force all links to open in new tab */
-  document.querySelectorAll('a').forEach(a=>{
+
+  /* Force EXTERNAL links to open in new tab — internal anchors (#) stay on same page */
+  function applyLinkTarget(a){
+    const href = a.getAttribute('href') || '';
+    if(href.startsWith('#') || href === '') return; // skip internal anchors
     if(!a.getAttribute('target')){
       a.setAttribute('target','_blank');
       a.setAttribute('rel','noopener noreferrer');
     }
-  });
+  }
+  document.querySelectorAll('a').forEach(applyLinkTarget);
+
   /* Watch for dynamically added links (modal etc) */
   new MutationObserver(mutations=>{
     mutations.forEach(m=>{
       m.addedNodes.forEach(node=>{
         if(node.nodeType!==1)return;
-        node.querySelectorAll&&node.querySelectorAll('a').forEach(a=>{
-          a.setAttribute('target','_blank');
-          a.setAttribute('rel','noopener noreferrer');
-        });
-        if(node.tagName==='A'){
-          node.setAttribute('target','_blank');
-          node.setAttribute('rel','noopener noreferrer');
-        }
+        if(node.querySelectorAll) node.querySelectorAll('a').forEach(applyLinkTarget);
+        if(node.tagName==='A') applyLinkTarget(node);
       });
     });
   }).observe(document.body,{childList:true,subtree:true});
+
   document.addEventListener('keydown',e=>{
     if(e.key==='F12'||
       (e.ctrlKey&&e.shiftKey&&['i','I','j','J','c','C'].includes(e.key))||
